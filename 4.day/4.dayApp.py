@@ -1,0 +1,17 @@
+print("== Your story simulation ==")
+print("Hello! I am a program that will help you simulate your story.")
+print("Please answer the following questions:")
+name = input("What is your name?: ")
+age = input("How old are you?: ")
+country = input("What country are you from?: ")
+dreamCollege = input("What college do you dream of going to?: ")
+GPA = input("What is your GPA?: ")
+SAT = input("What is your SAT score?: ")
+
+print("Our story begins with hero names " + name + "!")
+print("The hero is " + age + " years old and wants to go to " + "\033[31m" + dreamCollege + "\033[0m" + ".")#for colors
+print("The hero is from " + country + " and has a GPA of " + GPA + ".")
+print("The hero also has an SAT score of " + SAT + ".")
+print("and he have 3 years to get in!")
+print("and in this story we will see if he can make it in this three years!")
+print("...")
