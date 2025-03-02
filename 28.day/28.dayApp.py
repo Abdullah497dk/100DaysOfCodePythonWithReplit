@@ -77,12 +77,18 @@ while True:
     while True:
         print("Round " + str(count))
         time.sleep(2)
-        player2health = player2health - diceRoll3()*player1strong/25
-        player1health = player1health - diceRoll3()*player2strong/25
+        attack1 = diceRoll3()*player1strong/25
+        attack2 = diceRoll3()*player2strong/25
+        player2health = player2health - attack1
+        player1health = player1health - attack2
+        print(player1name + " attacks " + player2name + " with " + str(attack1) + " damage")
+        time.sleep(2)
+        print(player2name + " attacks " + player1name + " with " + str(attack2) + " damage")
+        time.sleep(2)
         print(player1name + " health: " + str(player1health))
         time.sleep(2)
         print(player2name + " health: " + str(player2health))
-        time.sleep(8)
+        time.sleep(5)
         count += 1
         if player1health <= 0:
             print(player2name + " wins!")
