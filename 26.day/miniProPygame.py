@@ -8,8 +8,7 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pygame Top Hareketi")
 
 pygame.mixer.init()
-pygame.mixer.music.load('audio.wav')
-pygame.mixer.music.play()
+
 
 # Renkler
 WHITE = (255, 255, 255)
